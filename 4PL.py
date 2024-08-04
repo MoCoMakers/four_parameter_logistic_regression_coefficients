@@ -184,10 +184,6 @@ if __name__ == "__main__":
     # concentration_array = [0, 4.5, 10.6, 19.7, 40, 84, 210]
     # response_array = [0.0089, 0.0419, 0.0873, 0.2599, 0.7074, 1.528, 2.7739]
 
-    # Original Raw Data, has curve_direction = "down"
-    concentration_array = [10, 2, 0.4, 0.08, 0.016, 0]
-    response_array = [11.55, 48.61, 68.06, 77.37, 95.64, 107.85]
-
     A_fit_final, B_fit_final, C_fit_final, D_fit_final, params_final, x_data_final, y_data_final, sse_final, rmse_final, r2_final, curve_direction_final = calculate_coefficients(concentration_array, response_array)
 
     print("Using "+curve_direction_final+" version of curve data")
